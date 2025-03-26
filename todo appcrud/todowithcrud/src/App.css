@@ -1,0 +1,7 @@
+.App {
+  background-color: blue;
+  min-height: 100vh; /* Ensure background covers full screen */
+  color: white; /* Improve visibility */
+  text-align: center;
+}
+
