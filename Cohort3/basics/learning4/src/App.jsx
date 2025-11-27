@@ -1,21 +1,38 @@
-import { useEffect, useState } from "react";
+
+import React from "react";
 
 function App() {
-  const [count, setCount] = useState(1);
-
-  function increaseCount() {
-    setCount(currentValue => currentValue + 1);
-  }
-
-  useEffect(function() {
-    console.log("above setinterval")
-    setInterval(increaseCount, 1000)
-  }, [])
-
-  return <div>
-       {count}
+  return (
+    <div style={{ display: "flex", background: "gray" }}>
+      <Card>
+        <div style={{ color: "green" }}>
+          What do you want to post <br/>
+          <input type="text" /><br/>
+         What do you want to post <br/><br/>
+          <input type="text" />
+        </div>
+      </Card>
+      <Card>
+        hi there
+      </Card>
     </div>
-  
+  );
 }
 
-export default App
+function Card({ children }) {
+  return (
+    <div
+      style={{
+        background: "white",
+        borderRadius: 10,
+        color: "black",
+        padding: 10,
+        margin: 10
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+export default App;
