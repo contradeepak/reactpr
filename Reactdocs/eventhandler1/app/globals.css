@@ -1,0 +1,11 @@
+.button{
+    padding: 12px 20px;
+    font-size: 30px;
+    margin: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body{
+    background-color: burlywood;
+}
